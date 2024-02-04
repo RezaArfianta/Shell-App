@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shellslicing/screens/account.dart';
+import 'package:shellslicing/screens/accounts/account.dart';
 import 'package:shellslicing/screens/homepage.dart';
 import 'package:shellslicing/screens/mycard.dart';
 import 'package:shellslicing/screens/offers.dart';

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shellslicing/components/account_card.dart';
+import 'package:shellslicing/screens/accounts/transactions.dart';
 
 class AccountPage extends StatefulWidget {
   const AccountPage({super.key});
@@ -51,9 +52,17 @@ class _AccountPageState extends State<AccountPage> {
               SizedBox(
                 height: 20,
               ),
-              AccountCard(
-                accountIcon: Icons.receipt,
-                accountText: "Transactions",
+              GestureDetector(
+                child: AccountCard(
+                  accountIcon: Icons.receipt,
+                  accountText: "Transactions",
+                ),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => TransactionsPage()));
+                },
               ),
               SizedBox(
                 height: 20,
